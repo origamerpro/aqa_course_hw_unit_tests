@@ -1,4 +1,4 @@
-    "use strict";
+'use strict';
 /*
 
 1. Создать переменную “item_1”
@@ -73,13 +73,13 @@ console.log(item_3); //Step 7-9
 
 let item_4;
 
-item_4 = "Hello World";
+item_4 = 'Hello World';
 
 console.log(item_4); //Step 10-12
 
-console.log(item_3 + item_4) //Step 13
+console.log(item_3 + item_4); //Step 13
 
-console.log(item_3 * item_4) //Step 14
+console.log(item_3 * item_4); //Step 14
 
 let item_5;
 
@@ -92,7 +92,7 @@ item_6 = 15;
 
 item_6_type = typeof item_6;
 
-console.log('item_6 == '+ typeof item_6+", "+ 'item_6_type == ' + typeof item_6_type); //Step 17-21
+console.log('item_6 == ' + typeof item_6 + ', ' + 'item_6_type == ' + typeof item_6_type); //Step 17-21
 
 const item_7 = String(item_6);
 
@@ -100,8 +100,4 @@ let item_7_type;
 
 item_7_type = typeof item_7;
 
-console.log('item_7 == '+ typeof item_7+", "+ 'item_7_type == ' + typeof item_7_type); //Step 22-25
-
-
-
-
+console.log('item_7 == ' + typeof item_7 + ', ' + 'item_7_type == ' + typeof item_7_type); //Step 22-25
