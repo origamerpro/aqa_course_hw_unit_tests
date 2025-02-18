@@ -5,7 +5,7 @@
 n + nn + nnn, где n не перемножаются, а конкатенируются
 
 */
-let numInt = parseInt(3);
+let numInt = parseInt(1);
 if (numInt >= 0 && numInt <= 9) {
   console.log(
     numInt + Number(String(numInt) + String(numInt)) + Number(String(numInt) + String(numInt) + String(numInt)),
