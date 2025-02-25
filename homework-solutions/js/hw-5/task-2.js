@@ -1,3 +1,4 @@
+'use strict';
 /**
  * Создать строку с числами от 1 до 100.
  * Если число делится на 3 – добавить строку `"число - делится на 3"`.
@@ -16,6 +17,23 @@
  * ...
  * 100 - делится на 5
  */
-let fizzBuzzResult = '';
+let fizzBuzz = '';
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        fizzBuzz += `${i} - делится и на 3 и на 5\n`;
+    } else if (i % 3 === 0) {
+        fizzBuzz += `${i} - делится на 3\n`;
+    } else if (i === 100) {
+        fizzBuzz += `${i} - делится на 5`;
+    } else if (i % 5 === 0) {
+        fizzBuzz += `${i} - делится на 5\n`;
+    }
+     else {
+        fizzBuzz += `${i}\n`;
+    }
+}
+let fizzBuzzResult = `${fizzBuzz}`
+console.log(fizzBuzzResult)
 
 export { fizzBuzzResult };
