@@ -1,3 +1,4 @@
+'use strict';
 /*
   У вас есть массив названий пицц вашего конкурента.
   Создайте скрипт с циклом, который будет проверять ваш набор названий пицц (массив) 
@@ -12,8 +13,18 @@
   const myPizzasT1 = ['Peperoni', 'Margherita', 'Diablo', 'Vegetarian'];
   const myPizzasT2 = ['Peperoni', 'Caprichosa', 'Diablo', '4 cheeses', 'hawai'];
 */
-
-let resultUnique;
+const competitorPizzas = ['Peperoni', 'Caprichosa', 'Diablo', '4 cheeses', 'hawai']
+const myPizzasT1 = ['Peperoni', 'Margherita', 'Diablo', 'Vegetarian'];
+const myPizzasT2 = ['Peperoni', 'Caprichosa', 'Diablo', '4 cheeses', 'hawai'];
+let resultUnique = [];
 let resultNull;
 
+for (let pizza of myPizzasT1 || myPizzasT2){
+  if (!competitorPizzas.includes(pizza)){
+    resultUnique.push(pizza.toLowerCase(pizza));
+  }else{
+    resultNull = null;
+  }
+}
+console.log(resultNull,resultUnique)
 export { resultNull, resultUnique };
