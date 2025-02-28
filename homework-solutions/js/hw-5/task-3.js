@@ -7,7 +7,7 @@
 const word = 'hello';
 let vowels = 'aeiouy';
 let vowelsCount = 0;
-let ConsonantsCount = 0;
+let consonantsCount = 0;
 for(let i = 0; i < word.length; i++){
     if(vowels.includes(word[i])){
         VowelsCount ++;
