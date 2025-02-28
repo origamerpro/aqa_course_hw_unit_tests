@@ -26,4 +26,5 @@ else if (age > maxAge){
 }
 else{
   console.log('Technical work')
+}
 } //end step 4-2
