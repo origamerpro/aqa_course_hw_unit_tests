@@ -1,3 +1,4 @@
+'use strict';
 /*
   digitalRoot
   Напишите рекурсивную функцию, которая принимает на вход число и складывает его цифры. 
@@ -7,9 +8,9 @@
   Например при подаче числа 19 (1+9=10>9, потому 1+0=1) выводится 1
 
 */
-
+console.log(digitalRoot(123))
 function digitalRoot(number) {
-  // Ваш код
+  return number > 9 ? digitalRoot(number % 10 + Math.floor(number / 10)) : number;
 }
 
 export { digitalRoot };
