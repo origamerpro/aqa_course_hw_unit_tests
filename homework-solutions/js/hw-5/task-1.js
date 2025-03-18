@@ -7,12 +7,15 @@
 let str ='';
 
 for(let i = 10; i >= 0; i--){
-    if(i % 2 === 0){
-        str += i + `${i} === 0 ? " : '-'}`;
+    if(i != 0 && i % 2 === 0){
+        str += `${i}-`;
+    }
+    else if(i == 0){
+        str += `${i}`;
     }
 }
 
-let evenNumbersResult = `${str.slice(0, 12)}`;
+let evenNumbersResult = `${str}`;
 console.log(evenNumbersResult)
 
  /** Создать строку из 5 строк с увеличивающимся количеством смайликов ":)".
@@ -25,9 +28,9 @@ console.log(evenNumbersResult)
  * :):):):):)
  */
 let smileResult = '';
-for(let i1 = 1; i1 <=5; ++i1){
-    if(i1 <=4){
-    smileResult += ':)'.repeat(i1) + `\n`;
+for(let i = 1; i <=5; ++i){
+    if(i <=4){
+    smileResult += ':)'.repeat(i) + `\n`;
     }else{
         smileResult += ':)'.repeat(5);
     }
