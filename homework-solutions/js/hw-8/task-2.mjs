@@ -1,3 +1,4 @@
+'use strict';
 /*
   sortedByVowels
   Напишите функцию, которая принимает на вход массив слов и
@@ -19,7 +20,9 @@ const words = [
 ];
 
 function sortedByVowels(wordsArr) {
-  // Ваш код
+  let vowels = wordsArr.map((el) => el.split('').filter(el => 'aeiou'.includes(el)).length);
+  return wordsArr.toSorted((a, b) => vowels[wordsArr.indexOf(a)] - vowels[wordsArr.indexOf(b)]);
 }
+console.log(sortedByVowels(words))
 
 export { sortedByVowels };
