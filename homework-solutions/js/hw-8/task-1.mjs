@@ -1,3 +1,4 @@
+'use strict';
 /*
 Перед вами массив чисел [7, 8, 2, 30, 85, 95, 77, 94, 37, 31], используя методы массивов сделайте следующее:
   1. forEach - присвойте массив в котором все числа делящиеся без остатка на 3 // [30]
@@ -14,13 +15,16 @@
 */
 const numbers = [7, 8, 2, 30, 85, 95, 77, 94, 37, 31];
 
-let forEach;
-let map;
-let filter;
-let find;
-let sort;
-let reduce;
-let some;
-let every;
+let forEach = [];
+numbers.forEach((el) => {if(el % 3 === 0){forEach.push(el)}});
+let map = numbers.map((el) => (el - numbers.length));
+let filter = numbers.filter((el, i, arr) => el > arr[i-1]);
+let find = numbers.find((el, i) => el === i);
+let sort = numbers.toSorted((a,b) => a-b);
+let reduce = numbers.reduce((result, num) => result + num, 0);
+let some = numbers.some((el) => el > 90);
+let every = numbers.every((el) => el % 10 > 0);
+
+console.log (sort, numbers)
 
 export { forEach, map, filter, find, sort, reduce, some, every };
