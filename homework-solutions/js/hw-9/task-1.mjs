@@ -1,3 +1,4 @@
+'use strict';
 /*
  Имеется объект const character = { 'name': 'Barney', 'age': 36, 'gender': 'male', 'isQa': true }
  1. Создать массив из ключей объекта character и присвоить его в переменную "keyWithFourChars" т.е., где 4 буквы //name, isQa
@@ -11,7 +12,7 @@
 const character = { name: 'Barney', age: 36, gender: 'male', isQa: true };
 
 // 1
-let keyWithFourChars;
+let keyWithFourChars = Object.keys(character);
 
 // 2
 let stringValues;
