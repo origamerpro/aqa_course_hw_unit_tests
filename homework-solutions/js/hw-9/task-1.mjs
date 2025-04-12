@@ -12,10 +12,12 @@
 const character = { name: 'Barney', age: 36, gender: 'male', isQa: true };
 
 // 1
-let keyWithFourChars = Object.keys(character);
+let keyWithFourChars = Object.keys(character).filter((el) => el.length === 4);
+console.log(keyWithFourChars)
 
 // 2
-let stringValues;
+let stringValues = Object.values(character).filter((el) => typeof el === 'string');
+console.log(stringValues)
 
 // 3
 /* Do not touch this part */
