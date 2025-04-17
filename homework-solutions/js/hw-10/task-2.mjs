@@ -8,7 +8,11 @@
 */
 
 function countOccurrences(arr) {
-  // ваш код
+  const result = {};
+  arr.forEach((el) => {
+    result[el] = (result[el] || 0) + 1;
+  });
+  return result;
 }
 
 export { countOccurrences };
