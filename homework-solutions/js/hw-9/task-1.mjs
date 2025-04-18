@@ -24,11 +24,13 @@ console.log(stringValues)
 const logSpy = jest.spyOn(console, 'log');
 // ---
 
-// Ваш код
-let keyValuePairs;
+let keyValuePairs = Object.entries(character)
+for (const [key,value] of Object.entries(character)){
+  console.log(`key = ${key}, value = ${value}`)
+} ;
 
 // 4
-let hasSalaryKey1stOption;
-let hasSalaryKey2ndOption;
+let hasSalaryKey1stOption = 'salary' in character;
+let hasSalaryKey2ndOption = Object.hasOwn(character, 'salary');
 
 export { keyWithFourChars, stringValues, hasSalaryKey1stOption, hasSalaryKey2ndOption, keyValuePairs, logSpy };
