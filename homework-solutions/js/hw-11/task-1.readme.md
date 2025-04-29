@@ -13,16 +13,11 @@
 3. Реализуйте метод `getFullName()` — возвращающий полное имя сотрудника.
 4. Проверьте корректную работу класса, создав несколько экземпляров и протестировав геттеры и сеттеры:
 
-```js
-const emp1 = new Employee('John', 'Doe', 'Developer', 3000);
-console.log(emp1.firstName); // "John"
-emp1.salary = 3100;
-console.log(emp1.salary); // 3100
-```
-
-5. Создайте класс `Company` с полями:
-
-```txt
+   const emp1 = new Employee("John", "Doe", "Developer", 3000);
+   console.log(emp1.firstName); // "John"
+   emp1.salary = 3100;
+   console.log(emp1.salary); // 3100
+5. Создайте класс Company с полями:
    title — название компании (строка).
    phone — телефон компании (число).
    address — адрес компании (строка).
